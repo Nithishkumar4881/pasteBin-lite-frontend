@@ -1,5 +1,5 @@
 import {useState} from 'react';
-const apiUrl = import.meta.env.VITE_BACKEND_URL;
+const apiUrl = process.env.VITE_BACKEND_URL;
 
 function App() {
   const [content, setContent] = useState('');
