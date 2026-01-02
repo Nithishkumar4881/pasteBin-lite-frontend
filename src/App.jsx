@@ -1,6 +1,5 @@
 import {useState} from 'react';
-require('dotenv').config();
-
+const apiUrl = import.meta.env.VITE_BACKEND_URL;
 
 function App() {
   const [content, setContent] = useState('');
@@ -16,7 +15,7 @@ function App() {
     };
 
     try {
-      const response = await fetch(`${process.env.BACKEND_URL}/api/pastes`, {
+      const response = await fetch(`${apiUrl}/api/pastes`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
