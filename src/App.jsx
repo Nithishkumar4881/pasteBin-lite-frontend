@@ -15,7 +15,7 @@ function App() {
     };
 
     try {
-      const response = await fetch(`${apiUrl}/api/pastes`, {
+      const response = await fetch(`https://paste-bin-lite-iota.vercel.app/api/pastes`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
